@@ -12,29 +12,44 @@ function NavBar() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navItems"
+          aria-label="Toggle Navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navItems">
           <ul className="navbar-nav ms-lg-auto d-flex align-items-end">
             <li className="nav-item">
-              <Link to={'/'} className="nav-link" href="#home">
+              <Link
+                to={'/'}
+                className="nav-link"
+                href="#home"
+                aria-label="home"
+              >
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={'/about'} className="nav-link" href="#about">
+              <Link
+                to={'/about'}
+                className="nav-link"
+                href="#about"
+                aria-label="about"
+              >
                 About
               </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#specials">
+              <a className="nav-link" href="#specials" aria-label="specials">
                 Specials
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#testimonials">
+              <a
+                className="nav-link"
+                href="#testimonials"
+                aria-label="testimonials"
+              >
                 Testimonials
               </a>
             </li>

@@ -117,7 +117,7 @@ const BookingStepTwo = () => {
       <div>
         <img
           src={restaurantImg}
-          alt=""
+          alt="booking image"
           className="img-fluid rounded"
           style={{ height: '200px', width: '100%', objectFit: 'cover' }}
         />

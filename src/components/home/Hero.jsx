@@ -14,14 +14,18 @@ const Hero = () => {
               traditional recipes served with a modern twist.
             </p>
             <button className="btn btn-primary karla-text fw-bold rounded-5 fs-4">
-              <Link to="/booking" className="text-dark text-decoration-none">
+              <Link
+                to="/booking"
+                className="text-dark text-decoration-none"
+                tabIndex={-1}
+              >
                 Reserve a table
               </Link>
             </button>
           </div>
 
           <div className="d-none d-md-block col-md-6">
-            <img src={heroImg} className="rounded img-fluid" />
+            <img src={heroImg} alt="hero image" className="rounded img-fluid" />
           </div>
         </div>
       </div>
