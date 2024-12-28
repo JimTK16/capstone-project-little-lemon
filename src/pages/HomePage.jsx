@@ -10,7 +10,9 @@ const HomePage = () => {
       <NavBar />
       <Hero />
       <MenuCategories />
-      <Specials />
+      <div id="specials">
+        <Specials />
+      </div>
       <Testimonials />
       <Footer />
     </>

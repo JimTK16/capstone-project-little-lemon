@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import { HashLink } from 'react-router-hash-link'
 import Logo from '../../assets/Logo.svg'
 function NavBar() {
   return (
@@ -40,18 +41,24 @@ function NavBar() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#specials" aria-label="specials">
+              <HashLink
+                smooth
+                className="nav-link"
+                to={'/#specials'}
+                aria-label="specials"
+              >
                 Specials
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
-              <a
+              <HashLink
+                smooth
                 className="nav-link"
-                href="#testimonials"
+                to={'/#testimonials'}
                 aria-label="testimonials"
               >
                 Testimonials
-              </a>
+              </HashLink>
             </li>
             <li className="nav-item">
               <button
